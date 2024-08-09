@@ -18,10 +18,6 @@ struct Node * Traversal(struct Node * ptr)
 
 struct Node * deleteFirst(struct Node * head)
 {
-    if (head == NULL)
-    {
-        return NULL;
-    }
     struct Node * p = head;
     head = head->next;
     free(p);
