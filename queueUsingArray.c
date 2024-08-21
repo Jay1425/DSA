@@ -64,9 +64,9 @@ void traversal(struct queue * q)
     }
     else
     {
-        for(int i=q->f; i<q->r; i++)
+        for(int i=q->f+1; i<=q->r; i++)
         {
-            printf("%d ", q->arr[i+1]);
+            printf("%d ", q->arr[i]);
         }
     }
 
